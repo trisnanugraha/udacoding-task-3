@@ -1,0 +1,200 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Roboto', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
+
+header, main, footer {
+    margin: 0 auto;
+}
+
+.container {
+    margin: 0 50px;
+}
+
+header .container {
+    /* background-color: rgb(102, 96, 96); */
+    height: 100px;
+}
+
+header h1 {
+    font-size: 30px;
+    color: #3B4856;
+    padding: 30px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.menu {
+    float: right;
+    margin: auto;
+}
+
+.menu .menu-list li {
+    display: inline-block;
+    margin: 43px 20px;
+}
+
+.menu .menu-list a {
+    text-decoration: none;
+    color: #3B4856;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.menu .menu-list a:hover {
+    font-weight: 700;
+    border-bottom: 2px solid #3B4856;
+}
+
+/* main .container {
+    margin: 0;
+} */
+
+.hero {
+    height: 500px;
+    background: linear-gradient(
+      to right,
+      hsla(211, 19%, 28%, 0.5),
+      hsla(212, 19%, 68%, 0.5)
+    ), url(../images/hero.jpg);
+    background-repeat: no-repeat;
+}
+
+.quotes {
+    margin: 100px auto;
+}
+
+.icon-quotes {
+    float: left;
+    margin-left: 50px;
+}
+
+.quotes h1 {
+    color: #3B4856;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.quotes h2 {
+    color: #737d88;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.box-container {
+    height: 600px;
+    border-top: 1px solid hsla(212, 19%, 68%, 0.1);
+    /* background-color: #ECFBFF; */
+    margin-bottom: 50px;
+}
+
+.box-container h1 {
+    font-size: 28px;
+    text-align: center;
+    font-weight: 700;
+    color: #3B4856;
+    padding: 100px 0 20px;
+}
+
+.box-container h2 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    color: #3B4856;
+}
+
+.box-container.subscribe {
+}
+
+footer .copyright {
+    background-color: #3B4856;
+    height: 80px;
+}
+
+footer .copyright p {
+    display: block;
+    padding-top: 35px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
