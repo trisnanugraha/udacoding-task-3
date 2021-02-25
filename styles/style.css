@@ -135,19 +135,71 @@ main {
     top: 120px;
 }
 
-/* .hero {
-    height: 550px;
-    background-image: url(/images/hero.jpg);
-    background-repeat: no-repeat;
-    background-position: -30px -10px;
-    opacity: 0.8;
-} */
-
-.hero img{
-    margin-top: 50px;
+.hero{
+    position: relative;
+    top: 10px;
+    height: 600px;
     width: 100%;
-    opacity: 0.8;
-    border-radius: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+  
+.slider{
+    width: 500%;
+    height: 600px;
+    display: flex;
+}
+  
+.slider input{
+    display: none;
+}
+  
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+  
+.slide img{
+    width: 100%;
+}
+  
+.nav-indicator{
+    position: absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+  
+.nav-btn{
+    border: 2px solid #3B4856;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+  
+.nav-btn:not(:last-child){
+    margin-right: 40px;
+}
+  
+.nav-btn:hover{
+    background-color: #F0FAFF;
+}
+  
+#radio-img-1:checked ~ .first{
+    margin-left: 0;
+    background-color: #F0FAFF;
+}
+  
+#radio-img-2:checked ~ .first{
+    margin-left: -20%;
+    background-color: #F0FAFF;
+}
+  
+#radio-img-3:checked ~ .first{
+    margin-left: -40%;
+    background-color: #F0FAFF;
 }
 
 .quotes {
@@ -469,6 +521,7 @@ footer .copyright p {
     padding: 15px 19px;
     text-decoration: none;
     font-size: 16px;
+    text-align: center;
 }
 
 .pagination ol a:hover {
@@ -633,9 +686,12 @@ span.bold {
     margin-bottom: 10px;
 }
 
+.field input {
+    height: 50px;
+}
+
 .field input, textarea {
     border: none;
-    height: 50px;
     width: 45%;
     font-size: 16px;
     text-indent: 10px;
@@ -647,8 +703,8 @@ span.bold {
 }
 
 .field textarea {
-    height: 120px;
     resize: none;
+    height: 120px;
     padding-top: 10px;
     font-family: 'Roboto', sans-serif;
 }
@@ -724,4 +780,3 @@ span.bold {
     position: absolute;
     bottom: 20px;
 }
-
