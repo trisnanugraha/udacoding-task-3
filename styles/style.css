@@ -636,7 +636,7 @@ span.bold {
 .field input, textarea {
     border: none;
     height: 50px;
-    width: 46%;
+    width: 45%;
     font-size: 16px;
     text-indent: 10px;
     border-radius: 3px;
@@ -651,6 +651,10 @@ span.bold {
     resize: none;
     padding-top: 10px;
     font-family: 'Roboto', sans-serif;
+}
+
+.contact-form {
+    position: relative;
 }
 
 .contact-form button {
@@ -705,5 +709,19 @@ span.bold {
     font-size: 18px;
     line-height: 25px;
     margin-bottom: 10px;
+}
+
+.box-blog .headline .text {
+    position: absolute;
+    margin-top: -10px;
+    height: 40%;
+    overflow: hidden;
+    top: 90px;
+    /* bottom: 50px; */
+}
+
+.box-blog .blog-kategori {
+    position: absolute;
+    bottom: 20px;
 }
 
